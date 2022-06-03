@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+}
+
+.um{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #35c935;
+    background-color: #35c935;
+    box-shadow: #e42c14 5px -5px 10px;
+    margin: 15px;
+}
+
+.dois{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #e42c14;
+    background-color: #e42c14;
+    box-shadow: #35c935 5px -5px 10px;
+    margin: 15px;
+}
