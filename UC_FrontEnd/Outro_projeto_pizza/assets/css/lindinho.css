@@ -3,11 +3,92 @@
     padding: 0;
     font-size: normal;
 }
-body{
-    margin: 0%;
+#body{
+    margin: auto;
+    width: 50%;
 }
 
-.pag1{
+.letra-1{
+    color: black;
+}
+.letra-2{
+    color: #F54748;
+}
+
+.letra-3{
+    color: #FDC55E;
+}
+
+#text1{
+    padding-right: 20px;
+    margin-right: 0%;
+}
+#text2{
+    padding-right: 20px;
+}
+#text3{
+    padding-right: 20px;
+}
+#text4{
+    padding-right: 20px;
+}
+#text5{
+    padding-right: 20px;
+}
+#text6{
+    padding-right: 20px;
+}
+#text7{
+    padding-right: 20%;
+}
+
+#topo{
+    display: flex;
+    width: 50%;
+}
+
+.logo{
+    text-align: left;
+}
+
+#pag1{
+    display: flex;
+    width: 50%;
+}
+
+#pag2{
+    margin: auto;
+    width: 50%;
+}
+.antes_dos_pratos{
+    margin: auto;
+    width: 50%;
+}
+
+.pratos{
+    margin: auto;
     display: flex;
 }
 
+#pag3{
+    display: flex;
+    width: 50%;
+}
+
+#pag4{
+    width: 50%;
+}
+
+
+.center{
+    margin: auto;
+    width: 50%;
+}
+
+.pratos2-1{
+    display: flex;
+}
+
+.pratos2-2{
+    display: flex;
+}
