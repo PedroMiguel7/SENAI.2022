@@ -172,14 +172,13 @@ h2{
 }
 
 .cardapio p{
-    display: flex;
     width: 243px;
     height: 63px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     text-align: center;
-    margin: 1%;
 }
 
 .pag3{
@@ -222,7 +221,6 @@ h2{
     list-style-type: none;
 }
 .pag4 .bttns-menu input{
-    margin: auto;
     color: #191919;
     opacity: 0.8;
     width: 98px;
@@ -241,5 +239,64 @@ h2{
     display: flex;
     flex-flow: row wrap;
     gap: 18px;
-    margin: 1%;
+    
+}
+
+/* background: linear-gradient(179.69deg, rgba(255, 255, 255, 0) -31.53%, #F54748 303.75%); */
+
+.card{
+    width: 310px;
+    height: 450px;
+    margin: 15px;
+    background-image: linear-gradient(180deg, #f5474700, #f5474700, #f5474744);
+    position: relative;
+    float: left;
+    border-radius: 7%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.card #img{
+    width: 215px;
+    height: 215px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.857), rgba(255, 255, 255, 0.132));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+
+.card #borda{
+    width: 240px;
+    height: 240px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+    background-image: linear-gradient(360deg, #f5474700, #f5474709, #f57e4774);
+}
+
+.card #preco{
+    width: 50px;
+    height: 50px;
+    background-color: #FDC55E;
+    position: absolute;
+    float: right;
+    margin-left: 130px;
+    border-radius: 100%;
+    margin-top: 160px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    color: white;
 }
