@@ -1,94 +1,245 @@
 *{
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    font-size: normal;
-}
-#body{
-    margin: auto;
-    width: 50%;
+    box-sizing: border-box ;
 }
 
-.letra-1{
-    color: black;
-}
-.letra-2{
-    color: #F54748;
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.letra-3{
+nav a{
+    margin-right: 2rem;
+    color: #191919;
+    text-decoration: none;
+}
+
+.colorR{
+    color:#F54748
+}
+
+.colorY{
     color: #FDC55E;
 }
 
-#text1{
-    padding-right: 20px;
-    margin-right: 0%;
-}
-#text2{
-    padding-right: 20px;
-}
-#text3{
-    padding-right: 20px;
-}
-#text4{
-    padding-right: 20px;
-}
-#text5{
-    padding-right: 20px;
-}
-#text6{
-    padding-right: 20px;
-}
-#text7{
-    padding-right: 20%;
+.bttn{
+    background-color: #F54748;
+    width: 162px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    color: white;
 }
 
-#topo{
-    display: flex;
-    width: 50%;
-}
-
-.logo{
-    text-align: left;
-}
-
-#pag1{
-    display: flex;
-    width: 50%;
-}
-
-#pag2{
+h2{
     margin: auto;
-    width: 50%;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+
+    width: 452px;
+    height: 124px;
+    left: 639px;
+    top: 2039px;
 }
-.antes_dos_pratos{
+
+
+.pag1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pag1 .um .confianca{
+    left: 76px;
+    top: 212px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 139px;
+    height: 28px;
+    background-color: #f547472c;
+    border-radius: 100px;
+
+}
+
+.pag1 .um h1{
+    font-size: 58px;
+    font-weight: 900;
+    line-height: 78px;
+    width: 500px;
+
+}
+
+.pag1 .um p{
+    margin-top: 20px;
+    color: #191919;
+    font-size:24px;
+    font-weight: 400;   
+    line-height: 32px;
+    width: 500px;
+    height: 96px;
+    left: 70px;
+    top: 450px;
+}
+
+#pesquisar{
+    margin-top: 15px;
+    width: 471px;
+    height: 54px;
+    left: 70px;
+    top: 568px; 
+    border-radius: 100px;
+    background-color: white;
+}
+
+.um .buttons{
+    margin-top: 15px; 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.um a{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #686D77;
+}
+
+#buttons-img{
+    box-shadow: 0px 15px 30px hsla(10, 69%, 60%, 0.32);
+    border-radius: 100%;
+    width: 52px;
+    height: 52px;   
+}
+
+.pag2 .uno2{
+    text-align: center;
+}
+
+.pag2 .uno2 h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67px; 
+    color: #191919;
+}
+
+.pag2 .uno2 p{
     margin: auto;
-    width: 50%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #191919;
+    opacity: 0.9;
+    width:856px;
 }
 
-.pratos{
+
+.catalogo{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.catalogo p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #191919;
+    opacity: 0.8;
+    width: 243px;
+}
+
+.catalogo input{
+    width: 131px;
+}
+
+
+.cardapio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1%;
+    width: 30%;
+}
+
+.cardapio p{
+    display: flex;
+    width: 243px;
+    height: 63px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    margin: 1%;
+}
+
+.pag3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.pag3 p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    width: 690px;
+    height: 72px;
+
+    color: #191919;
+    opacity: 0.8;
+}
+
+.pag3 li{
+    margin-top: 10px;
+    list-style-type: none;
+    font-size: 18px;
+    color: #191919;
+}
+
+.pag4 h2{
+    width: 653px;
+    text-align: center;
+}
+
+.pag4 .bttns-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    list-style-type: none;
+}
+.pag4 .bttns-menu input{
     margin: auto;
+    color: #191919;
+    opacity: 0.8;
+    width: 98px;
+    height: 44px;
+    border-radius: 100px;
+    border: solid 1px ;
+
+}
+
+.pag4 .bttn-clicked{
+    background-color: #F54748;
+    border: none;
+} 
+
+.catalogo2{ 
     display: flex;
-}
-
-#pag3{
-    display: flex;
-    width: 50%;
-}
-
-#pag4{
-    width: 50%;
-}
-
-
-.center{
-    margin: auto;
-    width: 50%;
-}
-
-.pratos2-1{
-    display: flex;
-}
-
-.pratos2-2{
-    display: flex;
+    flex-flow: row wrap;
+    gap: 18px;
+    margin: 1%;
 }
