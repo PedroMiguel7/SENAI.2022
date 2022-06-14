@@ -3,24 +3,35 @@
     padding: 0;
     box-sizing: border-box ;
 }
+.color{
+    background: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
+}
+body{
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 header{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 nav a{
-    margin-right: 2rem;
     color: #191919;
     text-decoration: none;
+    padding-left: 30px;
+    
+    
 }
 
-.colorR{
+.color-Red{
     color:#F54748
 }
 
-.colorY{
+.color-Yellow{
     color: #FDC55E;
 }
 
@@ -31,6 +42,8 @@ nav a{
     border-radius: 50px;
     border: none;
     color: white;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 h2{
@@ -45,14 +58,29 @@ h2{
     top: 2039px;
 }
 
-
-.pag1{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.bttn-cardapio{
+    width: 131px;
+    height: 45px;
+    border-radius: 100px;
+    position: absolute;
+    top: 420px;
+    background: #F54748;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
 }
 
-.pag1 .um .confianca{
+
+
+.banner-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.banner-one .content-one .trust{
     left: 76px;
     top: 212px;
 
@@ -66,7 +94,7 @@ h2{
 
 }
 
-.pag1 .um h1{
+.banner-one .content-one h1{
     font-size: 58px;
     font-weight: 900;
     line-height: 78px;
@@ -74,7 +102,7 @@ h2{
 
 }
 
-.pag1 .um p{
+.banner-one .content-one p{
     margin-top: 20px;
     color: #191919;
     font-size:24px;
@@ -94,9 +122,36 @@ h2{
     top: 568px; 
     border-radius: 100px;
     background-color: white;
+    border: 0.5px solid #191919;
+    background-image: url(../icon/bx_bx-search.png);
+    background-repeat: no-repeat;
+    background-position: 15px;
 }
 
-.um .buttons{
+#pesq{
+    position: absolute;
+    left: 625px;
+    top: 526px;
+    background-image: url(../icon/Group\ 8430.png);
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50px;
+}
+
+input::placeholder{
+    padding-left: 50px;
+    color: #191919;
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    width: 99px;
+    height: 24px;
+    letter-spacing: -0.01em;
+}
+
+.content-one .buttons{
     margin-top: 15px; 
     display: flex;
     align-items: center;
@@ -104,7 +159,7 @@ h2{
 
 }
 
-.um a{
+.content-one a{
     gap: 10px;
     display: flex;
     align-items: center;
@@ -119,11 +174,17 @@ h2{
     height: 52px;   
 }
 
-.pag2 .uno2{
+
+
+.banner-two{
+    margin-top: 150px;
+    background-color: white;
+}
+.banner-two .content-two{
     text-align: center;
 }
 
-.pag2 .uno2 h2{
+.banner-two .content-two h2{
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -131,7 +192,7 @@ h2{
     color: #191919;
 }
 
-.pag2 .uno2 p{
+.banner-two .content-two p{
     margin: auto;
     font-weight: 400;
     font-size: 18px;
@@ -141,148 +202,7 @@ h2{
     width:856px;
 }
 
-
-.catalogo{
-    margin: 40px;
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-}
-
-.catalogo p{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    color: #191919;
-    opacity: 0.8;
-    width: 243px;
-}
-
-.catalogo input{
-    width: 131px;
-}
-
-
-.cardapio{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 1%;
-    width: 30%;
-}
-
-.cardapio p{
-    width: 243px;
-    height: 63px;
-
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-}
-
-.pag3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 200px;
-}
-
-.pag3 p{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-
-    width: 690px;
-    height: 72px;
-
-    color: #191919;
-    opacity: 0.8;
-}
-
-.pag3 li{
-    margin-top: 10px;
-    list-style-type: none;
-    font-size: 18px;
-    color: #191919;
-}
-
-.pag4 h2{
-    width: 653px;
-    text-align: center;
-}
-
-.pag4 .bttns-menu{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 30px;
-    list-style-type: none;
-}
-.pag4 .bttns-menu input{
-    color: #191919;
-    opacity: 0.8;
-    width: 98px;
-    height: 44px;
-    border-radius: 100px;
-    border: solid 1px ;
-
-}
-
-.pag4 .bttn-clicked{
-    background-color: #F54748;
-    border: none;
-} 
-
-.catalogo2{ 
-    display: flex;
-    flex-flow: row wrap;
-    gap: 18px;
-    
-}
-
-/* background: linear-gradient(179.69deg, rgba(255, 255, 255, 0) -31.53%, #F54748 303.75%); */
-
-.card{
-    width: 310px;
-    height: 450px;
-    margin: 15px;
-    background-image: linear-gradient(180deg, #f5474700, #f5474700, #f5474744);
-    position: relative;
-    float: left;
-    border-radius: 7%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:flex-start;
-}
-
-.card #img{
-    width: 215px;
-    height: 215px;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.857), rgba(255, 255, 255, 0.132));
-    border-radius: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
-}
-
-.card #borda{
-    width: 240px;
-    height: 240px;
-    background-color: rgba(0, 0, 0, 0);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
-    border-radius: 50%;
-    background-image: linear-gradient(360deg, #f5474700, #f5474709, #f57e4774);
-}
-
-.card #preco{
+.preco{
     width: 50px;
     height: 50px;
     background-color: #FDC55E;
@@ -299,4 +219,293 @@ h2{
     justify-content: center;
     align-items:center;
     color: white;
+}
+
+.food{
+    width: 198px;
+    height: 198px;
+    border: solid 10px white;
+    border-radius: 50%;
+
+}
+
+.clientes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 156px;
+    height: 38px;
+}
+
+.card{
+    width: 310px;
+    height: 450px;
+    margin: 15px;
+    background-image: linear-gradient(180deg, #f5474700, #f5474700, #f5474744);
+    position: relative;
+    float: left;
+    border-radius: 7%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.border{
+    width: 240px;
+    height: 240px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+    background-image: linear-gradient(360deg, #f5474700, #f5474709, #f57e4774);
+}
+
+.catalog{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.catalog p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #191919;
+    opacity: 0.8;
+    width: 243px;
+}
+
+.catalog input{
+    width: 131px;
+}
+
+
+.cardapio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+}
+
+.cardapio h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 33px;
+    width: 193px;
+}
+
+.cardapio p{
+    width: 243px;
+    height: 63px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+}
+
+
+
+.banner-three{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.information h2{
+    margin-left: 0;
+}
+
+.banner-three p{
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    width: 690px;
+    height: 72px;
+
+    color: #191919;
+    opacity: 0.8;
+}
+
+.banner-three .listas{
+    padding-top: 15px;
+    display: flex;
+    gap: 150px;
+    padding-bottom: 20px;  
+}
+
+.banner-three li{
+    margin-top: 10px;
+    list-style-type: none;
+    font-size: 18px;
+    color: #191919;
+    align-items: center;
+}
+
+.banner-three input{
+    width: 114px;
+    height: 45px;
+    font-size: 18px;
+    line-height: 24px
+}
+
+
+
+.banner-four h2{
+    margin-top: 150px;
+    width: 653px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.banner-four .bttns-menu{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    gap: 30px;
+
+}
+.banner-four .bttns-menu input{
+    color: #191919;
+
+}
+
+.banner-four .bttns-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    list-style-type: none;
+}
+.banner-four .bttns-menu input{
+    color: #191919;
+    opacity: 0.8;
+    width: 98px;
+    height: 44px;
+    border-radius: 100px;
+    border: solid 1px ;
+    margin-bottom: 40px;
+
+}
+
+.banner-four .bttn-clicked{
+    background-color: #F54748;
+    border: none;
+} 
+
+.catalog2{ 
+    margin: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    gap: 18px; 
+    padding-bottom: 40px;    
+}
+
+.catalog2 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #191919;
+    opacity: 0.8;
+    width: 243px;
+}
+
+
+
+.banner-five{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(180deg, rgba(255, 255,255, 0) 0%, #fdc55e3f 73.18%);
+    margin-bottom: 100px;
+}
+
+.banner-five h2{
+    width: 600px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67px;
+}
+
+.banner-five p{
+    margin-top: 35px;
+    width: 550px;
+    height: 72px;   
+    color: #191919;
+    opacity: 0.8;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 35px;
+}
+
+
+
+.last-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    left: 0%;
+    right: 0%;
+    top: 92.23%;
+    bottom: 0%;
+    padding-bottom: 100px;
+}
+
+.last-one h3{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+}
+.last-one p{
+    margin-top:10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    width:325px;
+    color: #191919;
+}
+
+.last-one .aboutus{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.last-one .email{
+    margin-top: 20px;
+    width: 205px;
+    border-radius: 38px;
+    height: 50px;
+    border: solid 1px;
+    background-color: #191919;
+    opacity: 0.1;
+    color: #191919;
+    
+}
+
+.last-one .subscribe{
+    width: 118px;
+    height: 50px;
+    border-radius: 38px;
+    background-color: #F54748;
+    color: white;
+    border: none;
 }
