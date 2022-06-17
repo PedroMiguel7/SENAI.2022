@@ -619,7 +619,8 @@ input::placeholder{
     border: none;
 }
 
-/*-------------------- RESPONSIVO - CELULAR --------------------*/
+
+/* Deixando responsivo*/
 @media (max-width:480px){ 
     nav{
         display: none;
