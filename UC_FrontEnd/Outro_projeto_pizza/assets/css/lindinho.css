@@ -1,15 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*-------------------- GENERAL --------------------*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box ;
 }
+
 .color{
     background: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
 }
+
 body{
-    max-width: 1800px;
+
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    padding: 0 5%;
+    
 }
 
 header{
@@ -19,10 +28,15 @@ header{
     justify-content: space-evenly;
 }
 
+.burguer{
+    display: none;
+}
+
 nav a{
     color: #191919;
     text-decoration: none;
     padding-left: 30px;
+    
 }
 
 .color-Red{
@@ -33,7 +47,7 @@ nav a{
     color: #FDC55E;
 }
 
-.bttn{
+.bttn, .bttn-1{
     background-color: #F54748;
     width: 162px;
     height: 45px;
@@ -49,11 +63,11 @@ h2{
     font-weight: 700;
     font-size: 48px;
     line-height: 62px;
-
     width: 452px;
     height: 124px;
     left: 639px;
     top: 2039px;
+    max-width: 100%;
 }
 
 .bttn-cardapio{
@@ -61,7 +75,7 @@ h2{
     height: 45px;
     border-radius: 100px;
     position: absolute;
-    top: 420px;
+    top: 490px;
     background: #F54748;
     border-radius: 100px;
     border: none;
@@ -70,18 +84,24 @@ h2{
     line-height: 24px;
 }
 
-
-
+/*-------------------- PAGINA 01 --------------------*/
 .banner-one{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    max-width: 100%;
+}
+
+/*-------------------- PAGINA 01 - CONTEUDO 01 --------------------*/
+.content-one{
+    max-width: 100%;
+    height: auto;
 }
 
 .banner-one .content-one .trust{
     left: 76px;
     top: 212px;
-
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -89,7 +109,6 @@ h2{
     height: 28px;
     background-color: #f547472c;
     border-radius: 100px;
-
 }
 
 .banner-one .content-one h1{
@@ -97,7 +116,6 @@ h2{
     font-weight: 900;
     line-height: 78px;
     width: 500px;
-
 }
 
 .banner-one .content-one p{
@@ -113,7 +131,6 @@ h2{
 }
 
 #pesquisar{
-    margin-top: 15px;
     width: 471px;
     height: 54px;
     left: 70px;
@@ -126,15 +143,21 @@ h2{
     background-position: 15px;
 }
 
+.pesq-alinhar{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
 #pesq{
-    position: absolute;
-    left: 625px;
-    top: 526px;
+    position: relative;
     background-image: url(../icon/Group\ 8430.png);
     width: 42px;
     height: 42px;
     border: none;
     border-radius: 50px;
+    margin-left: -10%;
+    
 }
 
 input::placeholder{
@@ -172,12 +195,30 @@ input::placeholder{
     height: 52px;   
 }
 
+/*-------------------- PAGINA 01 - IMAGEN --------------------*/
+.img-girl{
+    display: flex;
+    align-items: flex-start;
+    margin-right: -7.2%;
+}
 
+.img-girl img{
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*-------------------- PAGINA 02 --------------------*/
 
 .banner-two{
     margin-top: 150px;
     background-color: white;
 }
+
+/*-------------------- PAGINA 02 - CONTEUDO 02 --------------------*/
+
 .banner-two .content-two{
     text-align: center;
 }
@@ -198,7 +239,9 @@ input::placeholder{
     color: #191919;
     opacity: 0.9;
     width:856px;
+    max-width: 100%;
 }
+/*-------------------- PAGINA 02 - CARDAPIO --------------------*/
 
 .preco{
     width: 50px;
@@ -237,7 +280,7 @@ input::placeholder{
 
 .card{
     width: 310px;
-    height: 450px;
+    height: 516px;
     margin: 15px;
     background-image: linear-gradient(180deg, #f5474700, #f5474700, #f5474744);
     position: relative;
@@ -263,10 +306,13 @@ input::placeholder{
 }
 
 .catalog{
-    margin: 40px;
+    margin: 35px;
     display: flex;
     justify-content: center;
     gap: 18px;
+    max-width: 100%;
+    flex-wrap: wrap;
+
 }
 
 .catalog p{
@@ -287,7 +333,6 @@ input::placeholder{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 20%;
 }
 
 .cardapio h3{
@@ -307,17 +352,39 @@ input::placeholder{
     text-align: center;
 }
 
-
-
+/*-------------------- PAGINA 03 --------------------*/
 .banner-three{
     margin-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 200px;
+    gap: 100px;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
-.information h2{
+/*-------------------- PAGINA 03 - CONTEUDO 03 --------------------*/
+
+.content-three{
+    height: auto;
+    max-width: 100%;
+}
+
+
+.imgchef{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.imgchef img{
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.content-three h2{
     margin-left: 0;
 }
 
@@ -332,13 +399,19 @@ input::placeholder{
 
     color: #191919;
     opacity: 0.8;
+    max-width: 100%;
 }
 
 .banner-three .listas{
     padding-top: 15px;
     display: flex;
     gap: 150px;
-    padding-bottom: 20px;  
+    padding-bottom: 10px;  
+    flex-flow: row;
+}
+
+.listainfo{
+    width: 50%;
 }
 
 .banner-three li{
@@ -356,8 +429,7 @@ input::placeholder{
     line-height: 24px
 }
 
-
-
+/*-------------------- PAGINA 04 --------------------*/
 .banner-four h2{
     margin-top: 150px;
     width: 653px;
@@ -376,7 +448,6 @@ input::placeholder{
 }
 .banner-four .bttns-menu input{
     color: #191919;
-
 }
 
 .banner-four .bttns-menu{
@@ -409,7 +480,9 @@ input::placeholder{
     flex-direction:row;
     justify-content: center;
     gap: 18px; 
-    padding-bottom: 40px;    
+    padding-bottom: 40px; 
+    max-width: 100%;   
+    flex-wrap: wrap;
 }
 
 .catalog2 p{
@@ -421,7 +494,7 @@ input::placeholder{
     width: 243px;
 }
 
-
+/*-------------------- PAGINA 05 --------------------*/
 
 .banner-five{
     margin-top: 50px;
@@ -430,13 +503,15 @@ input::placeholder{
     justify-content: space-around;
     background: linear-gradient(180deg, rgba(255, 255,255, 0) 0%, #fdc55e3f 73.18%);
     margin-bottom: 100px;
+    flex-wrap: wrap-reverse;
+    max-width: 100%;
 }
 
-.banner-five h2{
-    width: 600px;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 67px;
+/*-------------------- PAGINA 05 - CONTEUDO 04 --------------------*/
+
+.content-four{
+    max-width: 100%;
+    height: auto;
 }
 
 .banner-five p{
@@ -445,24 +520,53 @@ input::placeholder{
     height: 72px;   
     color: #191919;
     opacity: 0.8;
-
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     padding-bottom: 35px;
+    height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
+.imgchef2{
+    display: flex;
+    align-items: flex-start;
+    margin-right: -7.2%;
+}
 
+.imgchef2 img{
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-five h2{
+    width: 600px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*-------------------- FOOTER --------------------*/
 
 .last-one{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     left: 0%;
     right: 0%;
     top: 92.23%;
     bottom: 0%;
     padding-bottom: 100px;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.foodhut{
+    width: 325px;
 }
 
 .last-one h3{
@@ -473,19 +577,26 @@ input::placeholder{
 .last-one p{
     margin-top:10px;
     font-weight: 400;
+    width:100px;
+    color: #191919;
     font-size: 18px;
     line-height: 24px;
-    width:325px;
-    color: #191919;
+}
+.social-media{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
-.last-one .aboutus{
-    margin-top: 10px;
+.get-in-touch p{
+    width: 379px;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 10px;
+    height: 48px;
 }
+
 
 .last-one .email{
     margin-top: 20px;
@@ -506,4 +617,26 @@ input::placeholder{
     background-color: #F54748;
     color: white;
     border: none;
+}
+
+/*-------------------- RESPONSIVO - CELULAR --------------------*/
+@media (max-width:480px){ 
+    nav{
+        display: none;
+    }
+    .burguer{
+        display: inline;
+        width: 36px;
+        height: 27px;
+    }
+    .bttn-1{
+        display: none;
+    }
+    .banner-five h2{
+        height: auto;
+    }
+    .banner-five p{
+        height: auto;
+        width: 100%;
+    }
 }
