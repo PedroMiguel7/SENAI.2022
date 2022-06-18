@@ -611,9 +611,12 @@ input::placeholder{
 }
 
 
-/* Deixando responsivo*/
+/* tentando deixar responsivo*/
 @media (max-width:480px){ 
     nav{
+        display: none;
+    }
+    .outros-pratos{
         display: none;
     }
     .burguer{
@@ -631,6 +634,4 @@ input::placeholder{
         height: auto;
         width: 100%;
     }
-
-    
 }
