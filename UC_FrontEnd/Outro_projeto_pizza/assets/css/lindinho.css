@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*-------------------- GENERAL --------------------*/
-
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box ;
+    box-sizing: border-box;
 }
 
 .color{
@@ -13,12 +11,10 @@
 }
 
 body{
-
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     padding: 0 5%;
-    
 }
 
 header{
@@ -36,7 +32,6 @@ nav a{
     color: #191919;
     text-decoration: none;
     padding-left: 30px;
-    
 }
 
 .color-Red{
@@ -84,7 +79,7 @@ h2{
     line-height: 24px;
 }
 
-/*-------------------- PAGINA 01 --------------------*/
+/*PAG 01*/
 .banner-one{
     display: flex;
     align-items: center;
@@ -93,7 +88,7 @@ h2{
     max-width: 100%;
 }
 
-/*-------------------- PAGINA 01 - CONTEUDO 01 --------------------*/
+/*parte 1*/
 .content-one{
     max-width: 100%;
     height: auto;
@@ -157,7 +152,6 @@ h2{
     border: none;
     border-radius: 50px;
     margin-left: -10%;
-    
 }
 
 input::placeholder{
@@ -177,7 +171,6 @@ input::placeholder{
     display: flex;
     align-items: center;
     gap: 15px;
-
 }
 
 .content-one a{
@@ -195,7 +188,7 @@ input::placeholder{
     height: 52px;   
 }
 
-/*-------------------- PAGINA 01 - IMAGEN --------------------*/
+/*Img 1*/
 .img-girl{
     display: flex;
     align-items: flex-start;
@@ -208,16 +201,14 @@ input::placeholder{
     height: auto;
 }
 
-
-
-/*-------------------- PAGINA 02 --------------------*/
+/*PAG 02*/
 
 .banner-two{
     margin-top: 150px;
     background-color: white;
 }
 
-/*-------------------- PAGINA 02 - CONTEUDO 02 --------------------*/
+/*parte 2*/
 
 .banner-two .content-two{
     text-align: center;
@@ -241,7 +232,7 @@ input::placeholder{
     width:856px;
     max-width: 100%;
 }
-/*-------------------- PAGINA 02 - CARDAPIO --------------------*/
+/*pratos_01*/
 
 .preco{
     width: 50px;
@@ -267,7 +258,6 @@ input::placeholder{
     height: 198px;
     border: solid 10px white;
     border-radius: 50%;
-
 }
 
 .clientes{
@@ -352,7 +342,7 @@ input::placeholder{
     text-align: center;
 }
 
-/*-------------------- PAGINA 03 --------------------*/
+/*PAG 03*/
 .banner-three{
     margin-top: 150px;
     display: flex;
@@ -363,7 +353,7 @@ input::placeholder{
     max-width: 100%;
 }
 
-/*-------------------- PAGINA 03 - CONTEUDO 03 --------------------*/
+/*part 3*/
 
 .content-three{
     height: auto;
@@ -429,7 +419,8 @@ input::placeholder{
     line-height: 24px
 }
 
-/*-------------------- PAGINA 04 --------------------*/
+/*PAG 04*/
+
 .banner-four h2{
     margin-top: 150px;
     width: 653px;
@@ -494,7 +485,7 @@ input::placeholder{
     width: 243px;
 }
 
-/*-------------------- PAGINA 05 --------------------*/
+/*PAG 05*/
 
 .banner-five{
     margin-top: 50px;
@@ -507,7 +498,7 @@ input::placeholder{
     max-width: 100%;
 }
 
-/*-------------------- PAGINA 05 - CONTEUDO 04 --------------------*/
+/*parte 4*/
 
 .content-four{
     max-width: 100%;
@@ -550,7 +541,7 @@ input::placeholder{
     height: auto;
 }
 
-/*-------------------- FOOTER --------------------*/
+/*RODAPÉ*/
 
 .last-one{
     display: flex;
