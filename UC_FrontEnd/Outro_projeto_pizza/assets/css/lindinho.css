@@ -146,7 +146,7 @@ h2{
 
 #pesq{
     position: relative;
-    background-image: url(../icon/Group\ 8430.png);
+    background-image: url(../icon/Group8430.png);
     width: 42px;
     height: 42px;
     border: none;
@@ -612,7 +612,7 @@ input::placeholder{
 
 
 /* tentando deixar responsivo*/
-@media (max-width:480px){ 
+@media (max-width:680px){ 
     nav{
         display: none;
     }
