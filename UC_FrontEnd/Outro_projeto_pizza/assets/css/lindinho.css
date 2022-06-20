@@ -128,34 +128,42 @@ h2{
 }
 
 #pesquisar{
-    width: 480px;
+    width: 80%;
     position: relative;
     height: 54px;
     right: 10px;
-    border-radius: 100px;
-    background-color: white;
-    border: 0.5px solid #191919;
-    background-image: url(../icon/bx_bx-search.png);
-    background-repeat: no-repeat;
-    background-position: 15px;
+    margin-left: 60px;
+    outline: none;
+    border: none;
 }
 
 .barra-pesq{
     margin-top: 25px;
     display: flex;
+    
     align-items: center;
+    border: 0.5px solid #191919;
+    background-color: white;
+    border-radius: 100px;
+    background-image: url(../icon/bx_bx-search.png);
+    background-repeat: no-repeat;
+    background-position: 15px;
+    padding-right: 5px;
 }
 
 #pesq{
     position: relative;
-    background-image: url(../icon/Group8430.png);
+    float: right;
     width: 42px;
     height: 42px;
     border: none;
     border-radius: 60px;
-    margin-left: -11%;
-    margin-right: 11%;
+    margin-left: -10px;
 }
+#btn_pesq{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;}
 
 input::placeholder{
     padding-left: 50px;
