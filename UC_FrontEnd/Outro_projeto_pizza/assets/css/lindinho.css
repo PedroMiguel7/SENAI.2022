@@ -33,7 +33,9 @@ nav a{
     text-decoration: none;
     padding-left: 30px;
 }
-
+.tres_pontos{
+    display: none;
+}
 .color-Red{
     color:#F54748
 }
@@ -65,7 +67,7 @@ h2{
     max-width: 100%;
 }
 
-.bttn-cardapio{
+.bttn-pratos{
     width: 131px;
     height: 45px;
     border-radius: 100px;
@@ -126,10 +128,10 @@ h2{
 }
 
 #pesquisar{
-    width: 471px;
+    width: 480px;
+    position: relative;
     height: 54px;
-    left: 70px;
-    top: 568px; 
+    right: 10px;
     border-radius: 100px;
     background-color: white;
     border: 0.5px solid #191919;
@@ -138,8 +140,8 @@ h2{
     background-position: 15px;
 }
 
-.pesq-alinhar{
-    margin-top: 15px;
+.barra-pesq{
+    margin-top: 25px;
     display: flex;
     align-items: center;
 }
@@ -150,8 +152,9 @@ h2{
     width: 42px;
     height: 42px;
     border: none;
-    border-radius: 50px;
-    margin-left: -10%;
+    border-radius: 60px;
+    margin-left: -11%;
+    margin-right: 11%;
 }
 
 input::placeholder{
@@ -260,7 +263,7 @@ input::placeholder{
     border-radius: 50%;
 }
 
-.clientes{
+.avaliacoes{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -333,14 +336,13 @@ input::placeholder{
     width: 131px;
 }
 
-
-.cardapio{
+.pratos{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.cardapio h3{
+.pratos h3{
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 24px;
@@ -348,7 +350,7 @@ input::placeholder{
     width: 193px;
 }
 
-.cardapio p{
+.pratos p{
     width: 243px;
     height: 63px;
     font-weight: 400;
@@ -389,8 +391,17 @@ input::placeholder{
     flex-wrap: wrap;
 }
 
+
+.content-three{
+    flex-flow: column;
+}
+
 .content-three h2{
     margin-left: 0;
+}
+
+.content-three P{
+    padding-top: 60px;
 }
 
 .banner-three p{
@@ -398,24 +409,29 @@ input::placeholder{
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-
     width: 690px;
     height: 72px;
-
     color: #191919;
     opacity: 0.8;
     max-width: 100%;
 }
 
 .banner-three .listas{
-    padding-top: 15px;
+    padding-top: 60px;
     display: flex;
     gap: 150px;
     padding-bottom: 10px;  
     flex-flow: row;
 }
+.listas{
+    padding-top: 15px;
+}
 
-.listainfo{
+.listainfo1{
+    width: 50%;
+}
+
+.listainfo2{
     width: 50%;
 }
 
@@ -631,37 +647,55 @@ input::placeholder{
     nav{
         display: none;
     }
+
     .card-1{
         display: none;
     }
+
     .tres_pontos{
         display: inline;
         width: 36px;
         height: 27px;
         justify-content: right;
     }
+
     .bttn-1{
         display: none;
     }
+
     .banner-five h2{
         height: auto;
     }
+
     .banner-five p{
         height: auto;
         width: 100%;
     }
+
     .botao-1{
         display: none;
     }
+
+    .banner-four .bttns-menu{
+        padding-top: 50px;
+    }
+
     .logotipo1{
         justify-content: left;
     }
-    .listas{
-        padding-top: 20px;
-        display: flex;
+
+    .banner-three .listas {
+        padding-top: 100px;
         padding-bottom: 20px;  
+        gap: 0px;
         flex-flow: column;
         justify-content: flex-start;
     }
+
+    .content-three p{
+        padding-top: 50px;
+    }
+
+    
 
 }
