@@ -46,12 +46,23 @@ nav a{
 
 .bttn, .bttn-1{
     background-color: #F54748;
-    width: 162px;
+    width: 150px;
     height: 45px;
     border-radius: 50px;
     border: none;
     color: white;
-    font-size: 18px;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+.bttn-2{
+    background-color: #F54748;
+    width: 150px;
+    height: 45px;
+    border-radius: 60px;
+    border: none;
+    color: white;
+    font-size: 19px;
     line-height: 24px;
 }
 
@@ -435,11 +446,11 @@ input::placeholder{
     padding-top: 15px;
 }
 
-.listainfo1{
+.listainforme1{
     width: 50%;
 }
 
-.listainfo2{
+.listainforme2{
     width: 50%;
 }
 
@@ -703,7 +714,4 @@ input::placeholder{
     .content-three p{
         padding-top: 50px;
     }
-
-    
-
 }
