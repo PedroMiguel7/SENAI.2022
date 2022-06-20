@@ -283,6 +283,21 @@ input::placeholder{
     align-items:flex-start;
 }
 
+.card-1{
+    width: 310px;
+    height: 516px;
+    margin: 15px;
+    background-image: linear-gradient(180deg, #f5474700, #f5474700, #f5474744);
+    position: relative;
+    float: left;
+    border-radius: 7%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+}
+
 .border{
     width: 240px;
     height: 240px;
@@ -612,17 +627,18 @@ input::placeholder{
 
 
 /* tentando deixar responsivo*/
-@media (max-width:680px){ 
+@media (max-width:480px){ 
     nav{
         display: none;
     }
-    .outros-pratos{
+    .card-1{
         display: none;
     }
-    .burguer{
+    .tres_pontos{
         display: inline;
         width: 36px;
         height: 27px;
+        justify-content: right;
     }
     .bttn-1{
         display: none;
@@ -634,4 +650,18 @@ input::placeholder{
         height: auto;
         width: 100%;
     }
+    .botao-1{
+        display: none;
+    }
+    .logotipo1{
+        justify-content: left;
+    }
+    .listas{
+        padding-top: 20px;
+        display: flex;
+        padding-bottom: 20px;  
+        flex-flow: column;
+        justify-content: flex-start;
+    }
+
 }
