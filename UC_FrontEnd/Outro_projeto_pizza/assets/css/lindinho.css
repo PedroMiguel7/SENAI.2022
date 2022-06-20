@@ -321,7 +321,7 @@ input::placeholder{
     background-image: linear-gradient(360deg, #f5474700, #f5474709, #f57e4774);
 }
 
-.catalog{
+.catalogo{
     margin: 35px;
     display: flex;
     justify-content: center;
@@ -331,7 +331,7 @@ input::placeholder{
 
 }
 
-.catalog p{
+.catalogo p{
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
@@ -340,7 +340,7 @@ input::placeholder{
     width: 243px;
 }
 
-.catalog input{
+.catalogo input{
     width: 131px;
 }
 
@@ -504,7 +504,7 @@ input::placeholder{
     border: none;
 } 
 
-.catalog2{ 
+.catalogo2{ 
     margin: auto;
     display: flex;
     flex-direction:row;
@@ -515,7 +515,7 @@ input::placeholder{
     flex-wrap: wrap;
 }
 
-.catalog2 p{
+.catalogo2 p{
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
