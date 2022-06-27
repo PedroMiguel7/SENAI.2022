@@ -21,4 +21,6 @@
     }
 </script>
 
-
+<div id="txt">
+<script type="text/javascript">document.write(startTime())</script>
+</div>
