@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Fprintf("sla")
+	fmt.Fprintf("slaaa")
 }
