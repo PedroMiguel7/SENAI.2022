@@ -1,3 +1,3 @@
 # SENAI.2022
-Projetos senai full stack, pelo projeto de aprendizagem da BRISANET 
+Projetos senai curso full stack, pelo projeto de aprendizagem da BRISANET 
 
