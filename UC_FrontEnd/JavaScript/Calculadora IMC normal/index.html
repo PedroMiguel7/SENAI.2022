@@ -7,30 +7,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lindo.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
     <main class="main">
         <section class="calc-imc">
-            <h1>Calculadora IMC</h1>
+            <h1>Calculadora de IMC</h1>
             <form class="form" id="form">
-                <label for="kilos">
-                    Quilos
-                    <input name="kilos" id="kilos" placeholder="Peso atual" type="number" />
+                <div style="margin-top: 10px;">
+                    Peso
+                </div>
+                <label for="kilos" style="margin-top: -3px;">
+                    <input name="kilos" id="kilos" placeholder="Peso" type="number" />
                 </label>
-                <label for="altura">
+                <div style="margin-top: 15px;">
                     Altura
-                    <input name="altura" id="altura" placeholder="Altura em centímetros" type="number" />
+                </div>
+                <label for="altura" style="margin-top: -3px;">
+                    <input name="altura" id="altura" placeholder="Altura em cm" type="number" />
                 </label>
-                <label for="imc">
+                <div style="margin-top: 10px;">
                     IMC
+                </div>
+                <label for="imc" style="margin-top: -3px;">
                     <input disabled="disabled" name="imc" id="imc" />
                 </label>
                 <button>Calcular</button>
             </form>
         </section>
-    </main>
 
+        <section class="calc-imc" style="margin: 20px;">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            CLASSIFICAÇÃO
+                        </th>
+                        <th scope="col">
+                            IMC
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            Abaixo do Peso
+                        </th>
+                        <td>
+                            Abaixo de 18,5
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Peso Normal
+                        </th>
+                        <td>
+                            18,5 - 24,9
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Sobrepeso
+                        </th>
+                        <td>
+                            25 - 29,9
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Obesidade Grau I
+                        </th>
+                        <td>
+                            30 - 34,9
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Obesidade Grau II
+                        </th>
+                        <td>
+                            35 - 39,9
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Obesidade Grau III ou Mórbida
+                        </th>
+                        <td>
+                            Maior ou igual a 40
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+    </main>
     <script>
         function validaEntrada(args) {
             for (let i = 0; i < arguments.length; i++) {
