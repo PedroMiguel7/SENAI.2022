@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lindo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="main">
+        <section class="calc-imc">
+            <h1>Calculadora IMC</h1>
+            <form class="form" id="form">
+                <label for="kilos">
+                    Quilos
+                    <input name="kilos" id="kilos" placeholder="Peso atual" type="number" />
+                </label>
+                <label for="altura">
+                    Altura
+                    <input name="altura" id="altura" placeholder="Altura em centímetros" type="number" />
+                </label>
+                <label for="imc">
+                    IMC
+                    <input disabled="disabled" name="imc" id="imc" />
+                </label>
+                <button>Calcular</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function validaEntrada(args) {
+            for (let i = 0; i < arguments.length; i++) {
+                if (!!arguments[i] == false || arguments[i] < 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function calcularIMC(kilos, altura) {
+            altura = altura / 100;
+            return (kilos / (altura * altura));
+        }
+
+        const formCalcularIMC = document.getElementById('form');
+
+        formCalcularIMC.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const kilos = parseFloat(document.getElementById('kilos').value);
+            const altura = parseFloat(document.getElementById('altura').value);
+
+            if (validaEntrada(kilos, altura)) {
+                const imc = calcularIMC(kilos, altura);
+                document.getElementById('imc').value = parseInt(imc).toFixed(2);
+            } else {
+                document.getElementById('imc').value = "## ERRO ##";
+            }
+        });
+
+    </script>
+</body>
+
+</html>

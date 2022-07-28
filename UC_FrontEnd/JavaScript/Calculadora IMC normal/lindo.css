@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Acme', sans-serif;
+	font-size: 20px;
+	color: #2c3e50;
+	background-color: #DFDBE5;
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.calc-imc {
+	padding: 1em;
+	box-shadow: 6px 6px 20px gray, -6px -6px 20px white;
+	background-color: #DFDBE5;
+}
+
+@media (min-width: 500px) {
+	.calc-imc {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 500px;
+		width: 100%;
+		padding: 1em;
+	}
+}
+
+.calc-imc h1 {
+	text-align: center;
+	font-size: 2em;
+	text-decoration: underline;
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0.3em;
+}
+
+.form label,
+.form button {
+	margin-top: 1em;
+}
+
+.form input,
+.form button {
+	font-size: inherit;
+	font-family: inherit;
+	width: 100%;
+	padding: 0.5em;
+}
+
+.form button {
+	background-color: #FBEFFF;
+	cursor: pointer;
+	border-radius: 0.3em;
+	width: 50%;
+}
+
+.form button:hover {
+	filter: opacity(0.8);
+}
+
+.form button:active {
+	background-color: #FFEFFF;
+	color: #000;
+	filter: opacity(0.8);
+}
