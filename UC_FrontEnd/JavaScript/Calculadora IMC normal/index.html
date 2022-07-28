@@ -13,94 +13,96 @@
 <body>
     <main class="main">
         <section class="calc-imc">
-            <h1>Calculadora de IMC</h1>
-            <form class="form" id="form">
-                <div style="margin-top: 10px;">
-                    Peso
-                </div>
-                <label for="kilos" style="margin-top: -3px;">
-                    <input name="kilos" id="kilos" placeholder="Peso" type="number" />
-                </label>
-                <div style="margin-top: 15px;">
-                    Altura
-                </div>
-                <label for="altura" style="margin-top: -3px;">
-                    <input name="altura" id="altura" placeholder="Altura em cm" type="number" />
-                </label>
-                <div style="margin-top: 10px;">
-                    IMC
-                </div>
-                <label for="imc" style="margin-top: -3px;">
-                    <input disabled="disabled" name="imc" id="imc" />
-                </label>
-                <button>Calcular</button>
-            </form>
-        </section>
+            <div>
+                <h1>Calculadora de IMC</h1>
+                <form class="form" id="form">
+                    <div style="margin-top: 10px;">
+                        Peso
+                    </div>
+                    <label for="kilos" style="margin-top: -3px;">
+                        <input name="kilos" id="kilos" placeholder="Peso" type="number" />
+                    </label>
+                    <div style="margin-top: 15px;">
+                        Altura
+                    </div>
+                    <label for="altura" style="margin-top: -3px;">
+                        <input name="altura" id="altura" placeholder="Altura em cm" type="number" />
+                    </label>
+                    <div style="margin-top: 10px;">
+                        IMC
+                    </div>
+                    <label for="imc" style="margin-top: -3px;">
+                        <input disabled="disabled" name="imc" id="imc" />
+                    </label>
+                    <button>Calcular</button>
+                </form>
+            </div>
 
-        <section class="calc-imc" style="margin: 20px;">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">
-                            CLASSIFICAÇÃO
-                        </th>
-                        <th scope="col">
-                            IMC
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>
-                            Abaixo do Peso
-                        </th>
-                        <td>
-                            Abaixo de 18,5
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Peso Normal
-                        </th>
-                        <td>
-                            18,5 - 24,9
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Sobrepeso
-                        </th>
-                        <td>
-                            25 - 29,9
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Obesidade Grau I
-                        </th>
-                        <td>
-                            30 - 34,9
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Obesidade Grau II
-                        </th>
-                        <td>
-                            35 - 39,9
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Obesidade Grau III ou Mórbida
-                        </th>
-                        <td>
-                            Maior ou igual a 40
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
+            <div style="padding-left: 40px;">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                CLASSIFICAÇÃO
+                            </th>
+                            <th scope="col">
+                                IMC
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                Abaixo do Peso
+                            </th>
+                            <td>
+                                Abaixo de 18,5
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Peso Normal
+                            </th>
+                            <td>
+                                18,5 - 24,9
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Sobrepeso
+                            </th>
+                            <td>
+                                25 - 29,9
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Obesidade Grau I
+                            </th>
+                            <td>
+                                30 - 34,9
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Obesidade Grau II
+                            </th>
+                            <td>
+                                35 - 39,9
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Obesidade Grau III ou Mórbida
+                            </th>
+                            <td>
+                                Maior ou igual a 40
+                            </td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
     <script>
