@@ -13,46 +13,82 @@
 
 </head>
 
-<body>
+<body class="fundo">
     <main class="main">
         <section class="calc-imc">
-            <h1 style="text-align: center;">
-                Calculadora
-            </h1>
-
-            <div class="visor" style="text-align: center;">
-                sss
-            </div>
-            <div style="text-align: center; margin-top: 20px;">
-                <div>
-                    <button class="botao">7</button>
-                    <button class="botao">8</button>
-                    <button class="botao">9</button>
-                    <button class="botao">/</button>
-                </div>
-                <div>
-                    <button class="botao">4</button>
-                    <button class="botao">5</button>
-                    <button class="botao">6</button>
-                    <button class="botao">X</button>
-                </div>
-                <div>
-                    <button class="botao">1</button>
-                    <button class="botao">2</button>
-                    <button class="botao">3</button>
-                    <button class="botao">-</button>
-                </div>
-                <div>
-                    <button class="botao">0</button>
-                    <button class="botao">.</button>
-                    <button class="botao">+</button>
-                    <button class="botao">=</button>
-                </div>
-            </div>  
+            <p id="calcular">resultado</p>
+                <table>
+                    <tr>
+                        <td>
+                            <button class="botao" onclick="">C</button>
+                        </td>
+                        <td>
+                            <button class="botao" onclick=""><</button>
+                        </td>
+                        <td>
+                            <button class="botao" onclick="">/</button>
+                        </td>
+                        <td>
+                            <button class="botao" onclick="">X</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="botao" onclick="inserir('7')">7</button>
+                        </td>
+                        <td>
+                            <button class="botao" onclick="inserir('8')">8</button>
+                        </td>
+                        <td>
+                            <button class="botao" onclick="inserir('9')">9</button>
+                        </td>
+                        <td>
+                            <button class="botao" onclick="">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="botao" onclick="inserir('4')" >4</button>
+                        </td>
+                        <td>
+                            <button class="botao" onclick="inserir('5')">5</button>
+                        </td>
+                        <td>
+                            <button class="botao" onclick="inserir('6')">6</button>
+                        </td>
+                        <td>
+                            <button class="botao" onclick="">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="botao" onclick="inserir('1')">1</button>
+                        </td>
+                        <td>
+                            <button class="botao" onclick="inserir('2')">2</button>
+                        </td>
+                        <td>
+                            <button class="botao" onclick="inserir('3')">3</button>
+                        </td>
+                        <td rowspan="2">
+                            <button class="botao" style="height: 106px;" onclick="">=</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="botao" style="width: 106px;" onclick="inserir('0')">0</button>
+                        </td>
+                        <td>
+                            <button class="botao" onclick="">.</button>
+                        </td>
+                    </tr>
+                </table>
         </section>
     </main>
     <script src="index.js">
-
+        function inserir(number){
+            document.getElementById('calcular').innerHTML = number;
+        }
     </script>
 </body>
 
