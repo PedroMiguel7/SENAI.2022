@@ -16,20 +16,20 @@
 <body class="fundo">
     <main class="main">
         <section class="calc-imc">
-            <p id="calcular">resultado</p>
+            <p id="calcular"></p>
                 <table>
                     <tr>
                         <td>
-                            <button class="botao" onclick="">C</button>
+                            <button class="botao" onclick="limpar()">C</button>
                         </td>
                         <td>
-                            <button class="botao" onclick=""><</button>
+                            <button class="botao" onclick="apaga()"><</button>
                         </td>
                         <td>
-                            <button class="botao" onclick="">/</button>
+                            <button class="botao" onclick="inserir(' / ')">/</button>
                         </td>
                         <td>
-                            <button class="botao" onclick="">X</button>
+                            <button class="botao" onclick="inserir(' * ')">X</button>
                         </td>
                     </tr>
                     <tr>
@@ -43,7 +43,7 @@
                             <button class="botao" onclick="inserir('9')">9</button>
                         </td>
                         <td>
-                            <button class="botao" onclick="">-</button>
+                            <button class="botao" onclick="inserir(' - ')">-</button>
                         </td>
                     </tr>
                     <tr>
@@ -57,7 +57,7 @@
                             <button class="botao" onclick="inserir('6')">6</button>
                         </td>
                         <td>
-                            <button class="botao" onclick="">+</button>
+                            <button class="botao" onclick="inserir(' + ')">+</button>
                         </td>
                     </tr>
                     <tr>
@@ -71,7 +71,7 @@
                             <button class="botao" onclick="inserir('3')">3</button>
                         </td>
                         <td rowspan="2">
-                            <button class="botao" style="height: 106px;" onclick="">=</button>
+                            <button class="botao" style="height: 106px;" onclick="merenda()">=</button>
                         </td>
                     </tr>
                     <tr>
@@ -79,15 +79,29 @@
                             <button class="botao" style="width: 106px;" onclick="inserir('0')">0</button>
                         </td>
                         <td>
-                            <button class="botao" onclick="">.</button>
+                            <button class="botao" onclick="inserir('.')">.</button>
                         </td>
                     </tr>
                 </table>
         </section>
     </main>
-    <script src="index.js">
+    <script>
+        function limpar(){
+            document.getElementById('calcular').innerHTML = '';
+        }
         function inserir(number){
-            document.getElementById('calcular').innerHTML = number;
+            var resultado = document.getElementById('calcular').innerHTML
+            document.getElementById('calcular').innerHTML = resultado + number;
+        }
+        function apaga(){
+            var resultado = document.getElementById('calcular').innerHTML;
+            document.getElementById('calcular').innerHTML = resultado.substring(0, resultado.length-1) ;
+        }
+        function merenda(){
+            var resultado = document.getElementById('calcular').innerHTML;
+            if(resultado){
+                document.getElementById('calcular').innerHTML = eval(resultado);
+            }
         }
     </script>
 </body>
